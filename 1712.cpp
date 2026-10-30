@@ -4,10 +4,12 @@ using namespace std;
 // Function prototype
 void task1(); // Function declare 
 void task2(); // These are function definition or function prototype
+void task3(); // void tells function will not return a value
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
     task2(); // Exercise 2 is performed in this function
+    task3(); // Exercise 3 is performed in this function
     return 0;
 }
     
@@ -39,4 +41,23 @@ void task2()
     int mul = firstnum * secondnum;
 
     cout << firstnum << "*" << secondnum << "=" << mul << endl;
+}
+// Task 3: Loops and Iterations
+void task3()
+{
+    cout << "\nExersie 3: Multiplication Table" << endl;
+    cout << "Exercise 3 is done in task 3";
+    cout << "Personalisation Number is 1712" << endl;
+
+    // N is 3 because the last digit of my personalization number 1712 is 2, and 2 + 1 = 3.
+    // This loop displays the multiplication table of 3 from 1 to 3.
+
+    int personalizationnumber = 1712;
+    int n = (personalizationnumber % 10) + 1;
+
+    for (int i = 1; i <= n; i--)
+    {
+        // Multiply n by i and display the result
+        cout << n << " * " << i << " = " << n * i << endl;
+    }
 }
