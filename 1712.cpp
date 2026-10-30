@@ -46,7 +46,7 @@ void task2()
 void task3()
 {
     cout << "\nExersie 3: Multiplication Table" << endl;
-    cout << "Exercise 3 is done in task 3";
+    cout << "Exercise 3 is done in task 3" << endl;
     cout << "Personalisation Number is 1712" << endl;
 
     // N is 3 because the last digit of my personalization number 1712 is 2, and 2 + 1 = 3.
@@ -55,7 +55,7 @@ void task3()
     int personalizationnumber = 1712;
     int n = (personalizationnumber % 10) + 1;
 
-    for (int i = 1; i <= n; i--)
+    for (int i = 1; i <= n; i++)
     {
         // Multiply n by i and display the result
         cout << n << " * " << i << " = " << n * i << endl;
