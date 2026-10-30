@@ -29,14 +29,11 @@ void task1()
 // Task 2: Arithmetic Operations
 void task2()
 {
-    cout << "\nExercise 2: Arthematic Operations" << endl;
-
-    // first num is sum of digits of my personalization number 1712 = 11
-    int firstnum = 11;
-    int secondnum = 8;
-
-    // multiply the two operators
-    int mul = firstnum * secondnum;
-
-    cout << firstnum << "*" << secondnum << "=" << mul << endl;
+	cout << "\nExercise 2: Arthematic Operations" << endl;
+	//first num is sum of digits of my personalization number 1712 = 11 
+	int firstnum = 11;
+	int secondnum = 8;
+	// multiply the two operators
+	int mul = firstnum * secondnum;
+	cout << firstnum << "*" << secondnum << "=" << mul << endl;
 }
