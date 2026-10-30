@@ -38,5 +38,5 @@ void task2()
     // multiply the two operators
     int mul = firstnum * secondnum;
 
-    cout << firstnum << "*" << secondnum << "=" mul << endl;
+    cout << firstnum << "*" << secondnum << "=" << mul << endl;
 }
