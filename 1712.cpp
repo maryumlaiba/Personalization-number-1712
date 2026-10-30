@@ -10,7 +10,7 @@ int main()
 }
     
 // Task 1: Variables and Output
-int task1()
+void task1()
 {
     cout << "Personalization number is 1712" << endl;
     cout << "\nExercise 1: Variables and Output" << endl;
@@ -18,9 +18,9 @@ int task1()
     // Second digit is 7 and last digit is 2
     int first = 7;
     int second = 2;
-    int sum = first * second;
+    int sum = first + second;
 
-    cout << "First number is: " << first << endl
+    cout << "First number is: " << first << endl;
         cout << "Second number is: " << second << endl;
     cout << "Sum is: " << sum << endl;
 }
