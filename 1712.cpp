@@ -8,6 +8,8 @@ void task3(); // void tells function will not return a value
 void task4(); // all theses tasks are function names
 void task5(); 
 void task6();
+void task7();
+void showwelcome(string name, int marks); // helper function in task7
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
@@ -16,6 +18,7 @@ int main()
     task4(); // Exercise 4 is performed in this function
     task5(); // Exercise 5 is performed in this function
     task6(); // Exercise 6 is performed in this function
+    task7(); // Exercise 7 is performed in this function
     return 0;
 }
     
@@ -149,4 +152,18 @@ void task6() {
 	cout << "Third Number is = " << number[2] << endl; // I placed number '2' at third which satisfies both of our requirements
 
 
+}
+void task7() {
+	cout << "\nExercise 7: Functions and Parameters" << endl;
+
+	string studentName = "Student";
+	int studentMarks = 12;
+
+	showwelcome(studentName, studentMarks); // It takes the values stored in studentName and studentMarks and passes them to showwelcome()
+}
+
+void showwelcome(string name, int marks) // receives "Student" and 17
+{
+	cout << "Welcome, " << name << "!" << endl;
+	cout << "Your marks are: " << marks << endl;
 }
