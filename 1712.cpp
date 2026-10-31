@@ -6,12 +6,14 @@ void task1(); // Function declare
 void task2(); // These are function definition or function prototype
 void task3(); // void tells function will not return a value
 void task4(); // all theses tasks are function names
+void task5(); 
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
     task2(); // Exercise 2 is performed in this function
     task3(); // Exercise 3 is performed in this function
     task4(); // Exercise 4 is performed in this function
+    task5(); // Exercise 5 is performed in this function
     return 0;
 }
     
@@ -91,9 +93,9 @@ void task5()
 {
     cout << "\nExercise 5:Switch Case" << endl;
 
-    // Month = (1712 / 12) + 1
+    // Month = (1712 % 12) + 1
 
-    int month = (1712 / 12) + 1;
+    int month = (1712 % 12) + 1;
 
     cout << " Month is " << month << endl;
 
