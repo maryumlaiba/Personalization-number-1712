@@ -7,6 +7,7 @@ void task2(); // These are function definition or function prototype
 void task3(); // void tells function will not return a value
 void task4(); // all theses tasks are function names
 void task5(); 
+void task6();
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
@@ -14,6 +15,7 @@ int main()
     task3(); // Exercise 3 is performed in this function
     task4(); // Exercise 4 is performed in this function
     task5(); // Exercise 5 is performed in this function
+    task6(); // Exercise 6 is performed in this function
     return 0;
 }
     
@@ -140,4 +142,11 @@ void task5()
     default:
         cout << "Invalid month" << endl;
     }
+}
+void task6() {
+	cout << "\nExercisr6: Arrays" << endl;
+	int number[5] = { 12,25,2,40,55 };
+	cout << "Third Number is = " << number[2] << endl; // I placed number '2' at third which satisfies both of our requirements
+
+
 }
