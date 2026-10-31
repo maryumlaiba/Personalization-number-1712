@@ -5,11 +5,13 @@ using namespace std;
 void task1(); // Function declare 
 void task2(); // These are function definition or function prototype
 void task3(); // void tells function will not return a value
+void task4(); // all theses tasks are function names
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
     task2(); // Exercise 2 is performed in this function
     task3(); // Exercise 3 is performed in this function
+    task4(); // Exercise 4 is performed in this function
     return 0;
 }
     
@@ -60,4 +62,27 @@ void task3()
         // Multiply n by i and display the result
         cout << n << " * " << i << " = " << n * i << endl;
     }
+}
+// Task 4: If-Else Conditions
+void task4()
+{
+	cout << "\nExercise 4: If/Else Conditions" << endl;
+	// The full personalization number 1712 is tested
+	// If its remainder after division by 2 is zero it is even
+
+	int number = 1712;
+
+	cout << "\ntask4: Even or Odd" << endl;
+	// The % operator checks the remainder after division by 2
+
+	if (number % 2 == 0) // == checks whether the remainder is equal to 0
+	{
+		// If the remainder is 0, the number is Even
+		cout << number << " is Even" << endl;
+	}
+	else
+	{
+		// If the remainder is not 0, the number is Odd
+		cout << number << " is Odd" << endl;
+	}
 }
