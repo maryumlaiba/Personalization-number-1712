@@ -10,6 +10,9 @@ void task5();
 void task6();
 void task7();
 void showwelcome(string name, int marks); // helper function in task7
+void task8();
+void showcallcount();
+// These tell the compiler about the functions in advance 
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
@@ -19,6 +22,7 @@ int main()
     task5(); // Exercise 5 is performed in this function
     task6(); // Exercise 6 is performed in this function
     task7(); // Exercise 7 is performed in this function
+    task8(); // Exercise 8 is performed in this function
     return 0;
 }
     
@@ -172,15 +176,16 @@ void task8() {
 
 	for (int i = 1; i <= 5; i++) // loop controls how many times we calls the helper function
 	{
-		show call count();
+		showcallcount();
 	}
 }
 
 void showcallcount() // actual instruction
 {
 	static int callcount = 0; //static make variable retain its value between cells
-	callcount+; //increment
+	callcount++; //increment
 
 	cout << "Personalization Number: 1712" << endl;
-	cout << "Function Call Count: " << endl;
+	cout << "Function Call Count: " << callcount << endl;
+    
 }
