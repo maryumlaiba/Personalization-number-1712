@@ -167,3 +167,20 @@ void showwelcome(string name, int marks) // receives "Student" and 17
 	cout << "Welcome, " << name << "!" << endl;
 	cout << "Your marks are: " << marks << endl;
 }
+void task8() {
+	cout << "\nExercise 8: Static Local Variable" << endl;
+
+	for (int i = 1; i <= 5; i++) // loop controls how many times we calls the helper function
+	{
+		show call count();
+	}
+}
+
+void showcallcount() // actual instruction
+{
+	static int callcount = 0; //static make variable retain its value between cells
+	callcount+; //increment
+
+	cout << "Personalization Number: 1712" << endl;
+	cout << "Function Call Count: " << endl;
+}
