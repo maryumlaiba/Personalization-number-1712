@@ -13,6 +13,9 @@ void showwelcome(string name, int marks); // helper function in task7
 void task8();
 void showcallcount();
 // These tell the compiler about the functions in advance 
+void task10();
+void showVariableDifference(); //function to demonstrate global vs static variable
+int globalValue = 1712; //these tells compiler about the function in advance
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
@@ -23,6 +26,7 @@ int main()
     task6(); // Exercise 6 is performed in this function
     task7(); // Exercise 7 is performed in this function
     task8(); // Exercise 8 is performed in this function
+    task10(); // Exercise 10 is performed in this function
     return 0;
 }
     
@@ -188,4 +192,27 @@ void showcallcount() // actual instruction
 	cout << "Personalization Number: 1712" << endl;
 	cout << "Function Call Count: " << callcount << endl;
     
+}
+
+// Global variable initialized with PN 1712
+int globalNumber = 1712;
+
+void task10()
+{
+    cout << "\nTask 10: Global vs Static Variables" << endl;
+
+    // Static variable initialized with PN 1712
+    static int staticNumber = 1712;
+
+    // Display global and static variables
+    cout << "Global variable: " << globalNumber << endl
+    cout << "Static variable: " << staticNumber << endl;
+
+    // Increase both variables
+    globalNumber++;
+    staticNumber+;
+
+    cout << After increment: << endl;
+    cout << "Global variable: " << globalNumber << endl;
+    cout << "Static variable: " << staticNumber < endl;
 }
