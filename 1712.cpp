@@ -205,14 +205,14 @@ void task10()
     static int staticNumber = 1712;
 
     // Display global and static variables
-    cout << "Global variable: " << globalNumber << endl
+    cout << "Global variable: " << globalNumber << endl;
     cout << "Static variable: " << staticNumber << endl;
 
     // Increase both variables
     globalNumber++;
-    staticNumber+;
+    staticNumber++;
 
-    cout << After increment: << endl;
+    cout << "After increment: " << endl;
     cout << "Global variable: " << globalNumber << endl;
-    cout << "Static variable: " << staticNumber < endl;
+    cout << "Static variable: " << staticNumber << endl;
 }
