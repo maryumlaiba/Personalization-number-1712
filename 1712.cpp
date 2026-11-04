@@ -1,4 +1,5 @@
-#include <iostream>
+#include<iostream>
+#include<string>
 using namespace std;
 // Personalization number: 1712
 // Function prototype
@@ -15,8 +16,8 @@ void showcallcount(); // Helper function in task 8
 void task9(); //Debugging
 double computeAverage(); //Helper function in task 9
 void task10();
-void showVariableDifference(); //function to demonstrate global vs static variable
-int globalValue = 1712; 
+void showVariableValue(); //function to demonstrate global vs static variable
+int GlobalCount=1712; 
 //these tells compiler about the function in advance
 int main()
 {
@@ -57,7 +58,7 @@ void task2()
     int firstnum = 11;
     int secondnum = 8;
 
-    // multiply the two operators
+    // multiply the two numbers
     int mul = firstnum * secondnum;
 
     cout << firstnum << "*" << secondnum << "=" << mul << endl;
@@ -227,9 +228,13 @@ double computeAverage()
 // End of Task 9: Buggy Version
 
 // Global variable initialized with PN 1712
-int globalNumber = 1712;
-
 void task10()
+{
+     showVariableValue();
+     showVariableValue();
+}
+//Helper function
+void showVariableValue()
 {
     cout << "\nTask 10: Global vs Static Variables" << endl;
 
@@ -237,14 +242,14 @@ void task10()
     static int staticNumber = 1712;
 
     // Display global and static variables
-    cout << "Global variable: " << globalNumber << endl;
+    cout << "Global variable: " << GlobalCount << endl;
     cout << "Static variable: " << staticNumber << endl;
 
     // Increase both variables
-    globalNumber++;
+    GlobalCount++;
     staticNumber++;
 
     cout << "After increment: " << endl;
-    cout << "Global variable: " << globalNumber << endl;
+    cout << "Global variable: " << GlobalCount << endl;
     cout << "Static variable: " << staticNumber << endl;
 }
