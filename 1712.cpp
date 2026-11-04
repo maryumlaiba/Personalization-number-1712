@@ -240,7 +240,6 @@ double computeAverage()
 void task10()
 {
      showVariableValue();
-     showVariableValue();
 }
 //Helper function
 void showVariableValue()
