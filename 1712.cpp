@@ -62,7 +62,7 @@ void task2()
 // Task 3: Loops and Iterations
 void task3()
 {
-    cout << "\nExersie 3: Multiplication Table" << endl;
+    cout << "\nExercise 3: Multiplication Table" << endl;
     cout << "Exercise 3 is done in task 3" << endl;
     cout << "Personalisation Number is 1712" << endl;
 
@@ -86,9 +86,6 @@ void task4()
 	// If its remainder after division by 2 is zero it is even
 
 	int number = 1712;
-
-	cout << "\ntask4: Even or Odd" << endl;
-	// The % operator checks the remainder after division by 2
 
 	if (number % 2 == 0) // == checks whether the remainder is equal to 0
 	{
@@ -155,7 +152,7 @@ void task5()
     }
 }
 void task6() {
-	cout << "\nExercisr6: Arrays" << endl;
+	cout << "\nExercise6: Arrays" << endl;
 	int number[5] = { 12,25,2,40,55 };
 	cout << "Third Number is = " << number[2] << endl; // I placed number '2' at third which satisfies both of our requirements
 
@@ -170,7 +167,7 @@ void task7() {
 	showwelcome(studentName, studentMarks); // It takes the values stored in studentName and studentMarks and passes them to showwelcome()
 }
 
-void showwelcome(string name, int marks) // receives "Student" and 17
+void showwelcome(string name, int marks) // receives "Student" and 12
 {
 	cout << "Welcome, " << name << "!" << endl;
 	cout << "Your marks are: " << marks << endl;
@@ -183,10 +180,9 @@ void task8() {
 		showcallcount();
 	}
 }
-
 void showcallcount() // actual instruction
 {
-	static int callcount = 0; //static make variable retain its value between cells
+	static int callcount = 0; //static make variable retain its value between function calls
 	callcount++; //increment
 
 	cout << "Personalization Number: 1712" << endl;
