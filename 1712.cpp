@@ -9,13 +9,15 @@ void task4(); // all theses tasks are function names
 void task5(); 
 void task6();
 void task7();
-void showwelcome(string name, int marks); // helper function in task7
+void showwelcome(string name, int marks); // Helper function in task 7
 void task8();
-void showcallcount();
-// These tell the compiler about the functions in advance 
+void showcallcount(); // Helper function in task 8
+void task9(); //Debugging
+double computeAverage(); //Helper function in task 9
 void task10();
 void showVariableDifference(); //function to demonstrate global vs static variable
-int globalValue = 1712; //these tells compiler about the function in advance
+int globalValue = 1712; 
+//these tells compiler about the function in advance
 int main()
 {
 	task1(); // Exercise 1 is performed in this function
@@ -26,6 +28,7 @@ int main()
     task6(); // Exercise 6 is performed in this function
     task7(); // Exercise 7 is performed in this function
     task8(); // Exercise 8 is performed in this function
+    task9(); // Exercise 9 is performed in this function
     task10(); // Exercise 10 is performed in this function
     return 0;
 }
@@ -189,6 +192,39 @@ void showcallcount() // actual instruction
 	cout << "Function Call Count: " << callcount << endl;
     
 }
+// Buggy version – Original code before debugging
+void task9()
+// Task 9: Debugging
+{
+    cout << "\nExercise 9: Debugging and Average" << endl;
+    double average = computeAverage();
+    cout << "Average of valid marks: " << average << endl; 
+}
+
+double computeAverage() 
+{
+
+    int total = 0;
+
+    int count = 0;
+
+    int mark = 0;
+
+    do {
+
+        cin >> mark;
+
+        total = total + mark;      // Bug: invalid values are included
+
+        count = count + 1;         // Bug: counts sentinel and negative values
+
+    } while (mark != -1);
+
+    return total / count;          // Bug: integer division and possible divide by zero
+
+}
+
+// End of Task 9: Buggy Version
 
 // Global variable initialized with PN 1712
 int globalNumber = 1712;
