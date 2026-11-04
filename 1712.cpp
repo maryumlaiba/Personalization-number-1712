@@ -193,40 +193,49 @@ void showcallcount() // actual instruction
 	cout << "Function Call Count: " << callcount << endl;
     
 }
-// Buggy version – Original code before debugging
 void task9()
 // Task 9: Debugging
 {
     cout << "\nExercise 9: Debugging and Average" << endl;
     double average = computeAverage();
-    cout << "Average of valid marks: " << average << endl; 
+    cout << "Average of valid marks: " << average << endl;
 }
-
-double computeAverage() 
+double computeAverage()
 {
-
     int total = 0;
-
     int count = 0;
-
     int mark = 0;
 
-    do {
-
+    do
+    {
         cin >> mark;
 
-        total = total + mark;      // Bug: invalid values are included
+        // Bug 1: Negative marks were added to total.
+        // Fix: Only add marks that are zero or positive.
+        if (mark >= 0)
+        {
+            total = total + mark;
+            count = count + 1;
+        }
 
-        count = count + 1;         // Bug: counts sentinel and negative values
+        // Bug 2: The sentinel value -1 was counted.
+        // Fix: The condition above ignores all negative values,
+        // including -1.
 
     } while (mark != -1);
 
-    return total / count;          // Bug: integer division and possible divide by zero
+    // Bug 3: Integer division removed decimal values.
+    // Fix: Convert total into double before division.
 
+    // Bug 4: Division by zero could occur if no valid marks exist.
+    // Fix: Return 0.0 when count is zero.
+    if (count == 0)
+    {
+        return 0.0;
+    }
+
+    return static_cast<double>(total) / count;
 }
-
-// End of Task 9: Buggy Version
-
 // Global variable initialized with PN 1712
 void task10()
 {
